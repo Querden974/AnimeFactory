@@ -1,0 +1,6 @@
+[
+  {
+    "type": "sqlite",
+    "path": "d:\\CODE\\anime-factory\\database\\database.sqlite"
+  }
+]
