@@ -2,6 +2,7 @@
 @plugin "daisyui";
 
 @source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
+@source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/Auth/*.blade.php';
 @source '../../storage/framework/views/*.php';
 @source "../**/*.blade.php";
 @source "../**/*.js";
@@ -10,4 +11,14 @@
 @theme {
     --font-sans: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
         'Segoe UI Symbol', 'Noto Color Emoji';
+}
+
+@layer base{
+    .customInput{
+        @apply flex items-center gap-2 border border-gray-600 rounded px-2 py-1 focus-within:border-primary divide-x divide-gray-600 w-full
+    }
+    .poppup{
+       @apply absolute  w-70 h-60 bg-base-300 rounded-md z-50 mt-5 p-2
+    }
+
 }
